@@ -32,7 +32,7 @@ import com.colin.library.blurimpl.SupportLibraryBlurImpl;
 public class RealtimeBlurView extends View {
 
 	private float mDownsampleFactor; // default 4
-	private int mOverlayColor; // default #aaffffff
+	private int mOverlayColor; // default #22ffffff
 	private float mBlurRadius; // default 10dp (0 < r <= 25)
 
 	private final BlurImpl mBlurImpl;
@@ -60,7 +60,7 @@ public class RealtimeBlurView extends View {
 		mBlurRadius = a.getDimension(R.styleable.RealtimeBlurView_realtimeBlurRadius,
 				TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 10, context.getResources().getDisplayMetrics()));
 		mDownsampleFactor = a.getFloat(R.styleable.RealtimeBlurView_realtimeDownsampleFactor, 4);
-		mOverlayColor = a.getColor(R.styleable.RealtimeBlurView_realtimeOverlayColor, 0xAAFFFFFF);
+		mOverlayColor = a.getColor(R.styleable.RealtimeBlurView_realtimeOverlayColor, 0x22FFFFFF);
 		a.recycle();
 
 		mPaint = new Paint();

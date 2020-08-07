@@ -131,6 +131,7 @@ class MainActivity : AppCompatActivity() {
     private fun updateRadius() {
         blur_view.setBlurRadius(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, blur_radius.getProgress().toFloat(), resources.displayMetrics))
         cus_blur_view.setBlurRadius(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, blur_radius.getProgress().toFloat(), resources.displayMetrics))
+        blur_view?.setDownsampleFactor(1.2f)
         blur_radius_val?.setText(blur_radius.getProgress().toString() + "dp")
     }
 
