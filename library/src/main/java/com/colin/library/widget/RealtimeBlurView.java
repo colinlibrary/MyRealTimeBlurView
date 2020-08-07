@@ -16,7 +16,7 @@ import android.view.ViewTreeObserver;
 
 import androidx.annotation.RequiresApi;
 
-import com.colin.library.R;
+import com.colin.blurlibrary.R;
 import com.colin.library.blurimpl.AndroidXBlurImpl;
 import com.colin.library.blurimpl.SupportLibraryBlurImpl;
 
